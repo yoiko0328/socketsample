@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title><%=title %></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src=".\js\duel.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href=".\css\main.css" type="text/css">
+    <link rel="stylesheet" href=".\css\duel.css" type="text/css">
+</head>
+
+<body>
+    <div class="mainField">
+        <h1>じゃんけん</h1>
+        <div class="hands" id="hands">
+            <div class="hand" id="rock">
+                <img src="http://lmsnn.fc2web.com/material/M-j_gu02.png">
+            </div>
+            <div class="hand" id="scissors">
+                <img src="http://lmsnn.fc2web.com/material/M-j_ch02.png">
+            </div>
+            <div class="hand" id="paper">
+                <img src="http://lmsnn.fc2web.com/material/M-j_pa02.png">
+            </div>
+        </div>
+        <div class="buttonField">
+            <button type="submit" value="選択" class="selectButton">選択</button>
+        </div>
+        <div class="resultField">
+            <table class="resultTable table table-sm" id="resultTable">
+                <tbody>
+                <tr>
+                    <th class="playerName">player名</th>
+                    <th class="win">勝ち</th>
+                    <th class="defeat">負け</th>
+                    <th class="draw">あいこ</th>
+                    <th class="summary">合計</th>
+                </tr>
+                <tr>
+                    <td class="playerName" id="playerName1"></td>
+                    <td id="win"></td>
+                    <td id="def"></td>
+                    <td id="draw"></td>
+                    <td id="duel"></td>
+                </tr>
+                <tr>
+                    <td class="playerName" id="playerName2"></td>
+                    <td id="def"></td>
+                    <td id='win'></td>
+                    <td id="draw"></td>
+                    <td id="duel"></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+    <div id='loading'>
+        <div class='loadingMsg'>待機中...</div>
+    </div>
+    <div id="result" class="result">
+        <div class = "resultMsg" id="resultMsg">
+        <p></p>
+        </div>
+    </div>
+
+    <!-- BootStrapの宣言 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+#loading {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+#loading .loadingMsg {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 140px;
+}
+
+.result {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.result .resultMsg {
+  margin-right: 660px;
+  margin-left: 520px;
+  text-align: center;
+  padding-top: 140px;
+  font-size: 200%;
+}
+
+.close{
+  margin-right: 730px;
+  margin-left: 570px;
+  font-size: 100%;
+}
+
+.hand{
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin-right: 5px;
+  }
+
+  .buttonField{
+    clear: both;
+    margin-left: 250px;
+  }
+
+  button{
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
+  }
+  img:hover {
+    opacity: 0.5;
+    cursor : pointer;
+ }
+ .selectedHand{
+  border: 5px solid black ;
+ }
+
+ .mainField{
+  width: 700px;
+  height: 400px;
+  margin: auto;
+  margin-top: 20px;
+ }
+
+ .resultTable{
+  width: 500px;
+  margin: auto;
+  margin-top: 70px;
+  margin-right: 150px;
+ }
+
+ .playerName{
+   width: 200px;
+   text-align: left;
+ }
+ .win{
+  width: 75px;
+  text-align: center;
+}
+.defeat{
+  width: 75px;
+  text-align: center;
+}
+.draw{
+  width: 75px;
+  text-align: center;
+}
+.summary{
+  width: 75px;
+  text-align: center;
+}
+td {
+  text-align: center;
+}
